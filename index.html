@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>To Do List</title>
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        .green { 
+            color: lightgreen;
+        }
+        .red { 
+            color: lightcoral;
+        }
+        .blue { 
+            color: skyblue;
+        }
+        .list-group {
+            font-size: 1.5rem;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col mx-auto col-md-8 mt-3 text-center">
+                    <div class="alert align-items-center" id="message"></div>
+                    <form id="itemForm">
+                        <h3 class="">TODO List</h3>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" id="itemInput" value="" placeholder="Please enter a task">
+                            <button class="btn btn-outline-primary">ADD ITEM</button>
+                        </div>
+                    </form>
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item" dataType="all">
+                            <a class="nav-link active" href="#">All</a>
+                        </li>
+                        <li class="nav-item" dataType="todo">
+                            <a class="nav-link" href="#">To Do</a>
+                        </li>
+                        <li class="nav-item" dataType="done">
+                            <a class="nav-link" href="#">Completed</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-group list-group-flush" id="itemList">
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Tarea 1</span>
+                            <span>
+                                <a><i class="bi bi-check-circle green"></i></a>
+                                <a><i class="bi bi-pencil-square blue"></i></a>
+                                <a><i class="bi bi-x-circle red"></i></a>
+                            </span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <span>Tarea 2</span>
+                            <span>
+                                <a><i class="bi bi-check-circle green"></i></a>
+                                <a><i class="bi bi-pencil-square blue"></i></a>
+                                <a><i class="bi bi-x-circle red"></i></a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script src="script.js">
+        </script>
+    </body>
+</html>
