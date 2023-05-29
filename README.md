@@ -4,5 +4,4 @@ Basic CRUD web system using JS Object lists (In JSON format). Can filter tasks b
 Technologies used:
 <li> HTML
 <li> Bootstrap
-<li> Bootstrap
 <li> Vanilla JS
